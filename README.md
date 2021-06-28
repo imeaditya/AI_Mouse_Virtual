@@ -171,6 +171,7 @@ Adjust Frame Rate and Display
 
 HandTrackingModule:
 
+![Screenshot (275)](https://user-images.githubusercontent.com/68987597/123673137-bf6bc000-d85d-11eb-9230-24df21a41c03.png)
 
 Creating Video Object:
 -> Using openCV video capture we use our webcam through our python code.
