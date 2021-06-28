@@ -1,15 +1,15 @@
-Stamatics Project: Computer Vision
+#Stamatics Project: Computer Vision
 
 Team Members:
 Aditya Agarwal - 190058 
 Hitesh Anand - 200449
 Ashutosh Sharma - 200216
 
-AI Virtual Mouse
+#AI Virtual Mouse
 
-Documentation
+##Documentation
 
-OBJECTIVE:- 
+##OBJECTIVE:- 
 
 Through this project, we have created a virtual mouse. The principle  of this virtual mouse is based upon hand detection. We detect the fingers and use the information accordingly to move the cursor on the screen and click as and when required. 
 
