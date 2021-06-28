@@ -1,9 +1,9 @@
 # Stamatics Project: Computer Vision
 
-Team Members:
-Aditya Agarwal - 190058 
-Hitesh Anand - 200449
-Ashutosh Sharma - 200216
+Team Members:                  
+Aditya Agarwal - 190058                 
+Hitesh Anand - 200449                 
+Ashutosh Sharma - 200216                  
 
 # AI Virtual Mouse
 
@@ -19,11 +19,11 @@ If both our index and middle fingers are out and the distance between the tips o
 
 ## DEPENDENCIES:-
 
-OpenCV
-Numpy
-Mediapipe
-Autopy
-Time
+OpenCV               
+Numpy                 
+Mediapipe                
+Autopy                
+Time                  
 
 ## AIVirtualMouse.py
 
@@ -144,7 +144,7 @@ screen.
 -> We extract the distance between the tips of our middle finger 
    and index finger using findDistance(). 
 
-## Click if distance between fingertips < 40(Generally it is almost the least possible distance between the centre of 2 fingers):-
+-> Click if distance between fingertips < 40(Generally it is almost the least possible distance between the centre of 2 fingers):-
 
 -> if the distance obtained in previous step is less than a
    particular value, then click.
@@ -168,39 +168,39 @@ pTime = previously recorded time
 
 ![Screenshot (275)](https://user-images.githubusercontent.com/68987597/123673137-bf6bc000-d85d-11eb-9230-24df21a41c03.png)
 
-Creating Video Object:
+Creating Video Object:                      
 -> Using openCV video capture we use our webcam through our python code.
 		
-Using the MediaPipe to process and detect:
+Using the MediaPipe to process and detect:                             
 ->Using mphands.Hands() we detect the hands and also we don’t give any new configurations to the arguments taken by this module i.e. it will detect at max two hands and also if the image detection confidence if less than 50% then it will not detect so as to speed up the detection process.
 Inside the loop our rgb image is sent to this function.
 
-Displaying the points:
+Displaying the points:                           
 ->By results.multi_hand_landmarks we get any output if there is any hand in the frame of the webcam , so if there is a hand in the frame of the webcam we run a for loop over each hand and show the hand landmarks.
-
-Showing the Frame rate:
+ 
+Showing the Frame rate:                      
 ->Doing the reciprocal of the time difference when the last and current frame was displayed we get the frame rate , and display that on the window.
 
-Getting Position of Landmarks:
+Getting Position of Landmarks:                   
 We can use id’s which are already listed in the module , which shows the x ,y and z positions of the landmark in ratio of the size of image which is converted into coordinates by multiplying by the shape of image .
 
- Creating a class to initialize them:
+ Creating a class to initialize them:                   
  We have created a class named handDetector in which it stores all the parameters required for mp.hands so that we have the flexibility of changing them.
 Basically we have created an object which has its own variables values which can be either given by the user manually or they already have some initial value.
 Objects are :
 Mode , maxHands , detectionCon(Detection Confidence) , mp.Hands
 Mp.hands takes all the four of the above as params
 
-Defining findHands:
+Defining findHands:                     
 This function will be taking img and self as arguments and will be doing the part described in getting position of the landmarks point . 
 Also it will show coloured circles on the coordinates of the landmarks on the hands if we ask it to draw.
 Defining findPosition:
 This function will return a list containing the positions of all the landmarks by iterating over each hand present in the webcam frame and store them in list lmlist[] only if there is any hand present in the frame which will be checked by the if condition which checks that if any hand is even recognized.
 Also this list will be printed only if it has any elements which can be also done this by an if condition.
 
- Restructuring code :
+ Restructuring code :                         
  Now we have restructured the code into functions and calling         
- functions at appropriate places which makes code cleaner and    easier to understand. 
+ functions at appropriate places which makes code cleaner and easier to understand. 
 
 
 
