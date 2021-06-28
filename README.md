@@ -25,7 +25,7 @@ Mediapipe
 Autopy                
 Time                  
 
-## AIVirtualMouse.py
+## AI_Mouse_Implementation.py
 
 Set the value of variable    
   -> wCam, hCam are the dimensions of the camera frame.
@@ -164,7 +164,7 @@ where cTime = current recorded time
 pTime = previously recorded time 
 
 
-## HandTrackingModule:
+## Hand_Tracking_Model.py:
 
 ![Screenshot (275)](https://user-images.githubusercontent.com/68987597/123673137-bf6bc000-d85d-11eb-9230-24df21a41c03.png)
 
