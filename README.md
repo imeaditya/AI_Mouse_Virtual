@@ -3,7 +3,7 @@
 Team Members:                  
 Aditya Agarwal - 190058                 
 Hitesh Anand - 200449                 
-Ashutosh Sharma - 200216                  
+Ashutosh Sharma - 200216                      
 
 # AI Virtual Mouse  
 
